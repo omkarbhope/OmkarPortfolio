@@ -606,13 +606,13 @@ $(document).ready(function () {
   }),
     $(".bigButton").on("click", showWork);
 
-  var v = 14;
-  $("#div14").css({ opacity: "1", "z-index": "3" }),
+  var v = 5;
+  $("#div5").css({ opacity: "1", "z-index": "3" }),
     $(".slideDir").on("click", function () {
       var t = $(this).attr("id");
       if ("slideRight" == t) {
         var e = v;
-        (v = parseInt(v) - 1), 0 == v && (v = 16);
+        (v = parseInt(v) - 1), 0 == v && (v = 6);
         var o = $("#div" + e),
           s = $("#div" + v);
         $(".projects");
@@ -638,7 +638,7 @@ $(document).ready(function () {
           }, 200);
       } else {
         var e = v;
-        (v = parseInt(v) + 1), 16 == v && (v = 1);
+        (v = parseInt(v) + 1), 6 == v && (v = 1);
         var o = $("#div" + e),
           s = $("#div" + v);
         $(".projects");
